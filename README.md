@@ -11,8 +11,8 @@ Præsentation <br>
 
 | Clustering Algorithm | Beskrivelse | Formel |
 |---|---|---|
-| **Partitional Clustering** |  |  |
 | <br> | <br> | <br> |
+| **Partitional Clustering** |  |  |
 | **k-means** (MacQueen 1967, Forgy 1965, Lloyd 1982) | Opdeler data i k klynger ved at minimere variansen inden for hver klynge. | Minimerer: $\\sum_{i=1}^{k} \\sum_{x \\in C_i} \\|x - \\mu_i\\|^2$ |
 | **k-medoids** (PAM) | Ligner k-means, men bruger faktiske datapunkter som centre (medoids). | Minimerer samlet afstand til medoids |
 | **k-means++** (Arthur og Vassilvitskii, 2007) | Smart initiering af k-means for bedre klynger og hurtigere konvergens. | Samme som k-means, men bedre initiering |
