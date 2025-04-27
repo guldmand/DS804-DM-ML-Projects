@@ -2,7 +2,7 @@
 Jannik, Mathias & Leila
 
 ## Project part I: Clustering
-Assignment <br>
+<a href="assignment/exercise11-project1.pdf" target="_blank">Assignment</a> <br>
 Weka <br>
 Elki <br>
 Orange <br>
