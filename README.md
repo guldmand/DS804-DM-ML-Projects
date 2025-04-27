@@ -2,13 +2,13 @@
 Jannik, Mathias & Leila
 
 ## Project part I: Clustering
-Assignment
-Weka
-Elki
-Orange
-Code
-Præsentation
+Assignment <br>
+Weka <br>
+Elki <br>
+Orange <br>
+Code <br>
+Præsentation <br>
 
 
 ## Project part II: Classification
-Assignment
+Assignment <br>
