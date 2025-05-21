@@ -1,0 +1,174 @@
+---
+title: "Untitled"
+author: "Jannik Guldmand"
+date: "2025-04-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Shopping datasæt
+
+```{r}
+# Læs datasættet korrekt ind
+shopping <- read.csv("online_shoppers_intention.csv", sep = ",", header = TRUE, stringsAsFactors = FALSE)
+
+# Behold kun de numeriske features
+shopping_numerical <- shopping[, sapply(shopping, is.numeric)]
+
+# Lav et pairs plot
+pairs(shopping_numerical, main = "Pairs plot af Online Shoppers datasæt")
+```
+```{r}
+# list of features dvs kolonner
+features <- colnames(shopping)
+features
+```
+
+
+
+```{r}
+# Standardiser (skalering)
+shopping_scaled <- scale(shopping_numerical)
+
+# Find klynger med K-means (fx 3 clusters)
+set.seed(123)  # for reproducibility
+kmeans_result <- kmeans(shopping_scaled, centers = 10)
+
+# Se klynge-tilhørsforhold
+kmeans_result$cluster
+
+# Plot med PCA
+library(ggplot2)
+pca <- prcomp(shopping_scaled)
+pca_data <- data.frame(pca$x[, 1:2], Cluster = factor(kmeans_result$cluster))
+ggplot(pca_data, aes(PC1, PC2, color = Cluster)) +
+  geom_point() +
+  ggtitle("K-means clustering på shoppers datasæt")
+```
+
+```{r}
+# Elbow methode
+# Load nødvendige pakker
+library(factoextra)
+
+# Brug fviz_nbclust til at plotte total within-cluster sum of squares (WSS)
+fviz_nbclust(shopping_scaled, kmeans, method = "wss") +
+  labs(subtitle = "Elbow method")
+
+
+```
+
+
+```{r}
+# Kør K-means med valgt antal klynger
+set.seed(123)  # For gentagelige resultater
+kmeans_result <- kmeans(shopping_scaled, centers = 4)
+
+# Visualiser clusters med PCA
+pca <- prcomp(shopping_scaled)
+pca_data <- data.frame(pca$x[, 1:2], Cluster = factor(kmeans_result$cluster))
+
+library(ggplot2)
+ggplot(pca_data, aes(PC1, PC2, color = Cluster)) +
+  geom_point() +
+  ggtitle("K-means clustering baseret på Elbow method valg")
+
+```
+```{r}
+library(plotly)
+
+# PCA på de skalerede data
+pca <- prcomp(shopping_scaled)
+
+# Lav et data frame med de første tre komponenter + klynge labels
+pca_data <- data.frame(PC1 = pca$x[, 1],
+                       PC2 = pca$x[, 2],
+                       PC3 = pca$x[, 3],
+                       Cluster = factor(kmeans_result$cluster))  # 4 clusters
+
+# 3D plot med plotly
+plot_ly(pca_data, 
+        x = ~PC1, y = ~PC2, z = ~PC3, 
+        color = ~Cluster, 
+        colors = c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"),  # fire farver
+        type = "scatter3d", 
+        mode = "markers") %>%
+  layout(title = "3D K-means clustering med 4 klynger (PCA)")
+
+```
+
+
+
+
+```{r}
+#silhuette score
+
+fviz_nbclust(shopping_scaled, kmeans, method = "silhouette") +
+  labs(subtitle = "Silhouette method")
+
+```
+
+```{r}
+# Kør K-means med valgt antal klynger
+set.seed(123)  # For gentagelige resultater
+kmeans_result <- kmeans(shopping_scaled, centers = 2)
+
+# Visualiser clusters med PCA
+pca <- prcomp(shopping_scaled)
+pca_data <- data.frame(pca$x[, 1:2], Cluster = factor(kmeans_result$cluster))
+
+library(ggplot2)
+ggplot(pca_data, aes(PC1, PC2, color = Cluster)) +
+  geom_point() +
+  ggtitle("K-means clustering baseret på Elbow method valg")
+
+```
+```{r}
+library(plotly)
+
+# PCA på de skalerede data
+pca <- prcomp(shopping_scaled)
+
+# Lav et data frame med de første tre komponenter + klynge labels
+pca_data <- data.frame(PC1 = pca$x[, 1],
+                       PC2 = pca$x[, 2],
+                       PC3 = pca$x[, 3],
+                       Cluster = factor(kmeans_result$cluster))
+
+# Plot med plotly i 3D
+plot_ly(pca_data, 
+        x = ~PC1, y = ~PC2, z = ~PC3, 
+        color = ~Cluster, 
+        colors = c("#1f77b4", "#ff7f0e"),  # valgfrie farver
+        type = "scatter3d", 
+        mode = "markers") %>%
+  layout(title = "3D K-means clustering baseret på PCA")
+
+```
+```{r}
+# Tilføj cluster labels til dit originale datasæt
+shopping$Cluster <- factor(kmeans_result$cluster)
+
+# Konverter Revenue til factor hvis det ikke allerede er
+shopping$Revenue <- factor(shopping$Revenue)
+
+# Sammenlign GNS for udvalgte features per cluster
+library(dplyr)
+
+shopping %>%
+  group_by(Cluster) %>%
+  summarise(
+    Count = n(),  # Antal sessioner i hver klynge
+    Avg_ProductRelated_Duration = mean(ProductRelated_Duration, na.rm = TRUE),  # Gennemsnitlig tid på produktsider
+    Avg_BounceRates = mean(BounceRates, na.rm = TRUE),  # Gennemsnitlig andel der forlod siden efter første klik
+    Avg_PageValues = mean(PageValues, na.rm = TRUE),  # Gennemsnitlig estimeret værdi af besøgte sider
+    PurchaseRate = mean(Revenue == "TRUE") * 100  # Procentdel der endte med at købe noget
+  ) %>%
+  mutate(across(where(is.numeric), round, 2))
+
+
+```
+
