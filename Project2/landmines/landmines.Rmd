@@ -1,0 +1,22 @@
+---
+title: "Classificaiton Part2"
+author: "Jannik Guldmand"
+date: "2025-05-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Classification part2
+
+```{r}
+#load the data from csv
+
+```
+
+
+
+
+

@@ -1,0 +1,113 @@
+[22.32.06] & C:/Users/gurug/AppData/Local/Programs/Python/Python311/python.exe c:/Udvikling/Repos/DS804-DM-ML-Projects/Project2/landmines/HyperTuneUpdated.py
+------ Manuelle Train-Test split ------
+=== Test size 10% / Train size 90% ===
+  KNN: {'n_neighbors': 2} | Score: 0.497
+  DecisionTree: {'criterion': 'gini', 'max_depth': 15, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 6, 'splitter': 'random'} | Score: 0.559
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300} | Score: 0.602
+  MLP: {'hidden_layer_sizes': (30, 10), 'max_iter': 2000} | Score: 0.638
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.533
+=== Test size 15% / Train size 85% ===
+  KNN: {'n_neighbors': 2} | Score: 0.456
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 6, 'splitter': 'random'} | Score: 0.568
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50} | Score: 0.578
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.655
+  SVM: {'C': 1, 'kernel': 'linear'} | Score: 0.519
+=== Test size 20% / Train size 80% ===
+  KNN: {'n_neighbors': 2} | Score: 0.467
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 15, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'splitter': 'random'} | Score: 0.585
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50} | Score: 0.604
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.611
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.522
+=== Test size 25% / Train size 75% ===
+  KNN: {'n_neighbors': 2} | Score: 0.487
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 6, 'splitter': 'best'} | Score: 0.549
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100} | Score: 0.553
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.495
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.49
+=== Test size 30% / Train size 70% ===
+  KNN: {'n_neighbors': 2} | Score: 0.488
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'best'} | Score: 0.589
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500} | Score: 0.542
+  MLP: {'hidden_layer_sizes': (30, 10), 'max_iter': 2000} | Score: 0.623
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.517
+=== Test size 35% / Train size 65% ===
+  KNN: {'n_neighbors': 2} | Score: 0.498
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 8, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'best'} | Score: 0.598
+  RandomForest: {'max_depth': 15, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 150} | Score: 0.585
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.653
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.544
+=== Test size 40% / Train size 60% ===
+  KNN: {'n_neighbors': 2} | Score: 0.465
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 6, 'splitter': 'random'} | Score: 0.535
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200} | Score: 0.544
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.603
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.529
+=== Test size 45% / Train size 55% ===
+  KNN: {'n_neighbors': 1} | Score: 0.476
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 6, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'splitter': 'best'} | Score: 0.557
+  RandomForest: {'max_depth': 15, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50} | Score: 0.584
+  MLP: {'hidden_layer_sizes': (30, 10), 'max_iter': 3000} | Score: 0.627
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.535
+=== Test size 50% / Train size 50% ===
+  KNN: {'n_neighbors': 6} | Score: 0.492
+  DecisionTree: {'criterion': 'gini', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'splitter': 'random'} | Score: 0.55
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100} | Score: 0.562
+  MLP: {'hidden_layer_sizes': (30, 10), 'max_iter': 2000} | Score: 0.616
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.539
+\n------ K-Fold (kun hypertuning, ikke test) ------
+=== K-Fold Cross-Validation, K=2 ===
+  KNN: {'n_neighbors': 2} | Score: 0.559
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 12, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'best'} | Score: 0.598
+  RandomForest: {'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100} | Score: 0.609
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.678
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.612
+=== K-Fold Cross-Validation, K=3 ===
+  KNN: {'n_neighbors': 3} | Score: 0.565
+  DecisionTree: {'criterion': 'gini', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'random'} | Score: 0.592
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50} | Score: 0.607
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.666
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.553
+=== K-Fold Cross-Validation, K=4 ===
+  KNN: {'n_neighbors': 6} | Score: 0.568
+  DecisionTree: {'criterion': 'gini', 'max_depth': 8, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'best'} | Score: 0.583
+  RandomForest: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200} | Score: 0.607
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.689
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.571
+=== K-Fold Cross-Validation, K=5 ===
+  KNN: {'n_neighbors': 2} | Score: 0.58
+  DecisionTree: {'criterion': 'gini', 'max_depth': 12, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'splitter': 'random'} | Score: 0.574
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100} | Score: 0.595
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.701
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.577
+=== K-Fold Cross-Validation, K=6 ===
+  KNN: {'n_neighbors': 3} | Score: 0.565
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 12, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'best'} | Score: 0.607
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 150} | Score: 0.598
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.725
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.577
+=== K-Fold Cross-Validation, K=7 ===
+  KNN: {'n_neighbors': 2} | Score: 0.565
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'random'} | Score: 0.598
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 50} | Score: 0.601
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.696
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.562
+=== K-Fold Cross-Validation, K=8 ===
+  KNN: {'n_neighbors': 2} | Score: 0.565
+  DecisionTree: {'criterion': 'gini', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'splitter': 'random'} | Score: 0.592
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200} | Score: 0.595
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.702
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.565
+=== K-Fold Cross-Validation, K=9 ===
+  KNN: {'n_neighbors': 2} | Score: 0.559
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 10, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'splitter': 'best'} | Score: 0.581
+  RandomForest: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 200} | Score: 0.592
+  MLP: {'hidden_layer_sizes': (100, 50), 'max_iter': 2000} | Score: 0.722
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.56
+=== K-Fold Cross-Validation, K=10 ===
+  KNN: {'n_neighbors': 2} | Score: 0.565
+  DecisionTree: {'criterion': 'entropy', 'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 4, 'splitter': 'random'} | Score: 0.601
+  RandomForest: {'max_depth': 15, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500} | Score: 0.586
+  MLP: {'hidden_layer_sizes': (50, 20), 'max_iter': 2000} | Score: 0.719
+  SVM: {'C': 10, 'kernel': 'rbf'} | Score: 0.568
+\n------ Færdig ------
+[22.46.30] 

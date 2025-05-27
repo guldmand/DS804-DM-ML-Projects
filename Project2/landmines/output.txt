@@ -1,0 +1,1555 @@
+=== Test size 10% / Train size 90% ===
+KNN:
+KNN (k=5) Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.50      1.00      0.67         7
+           2       0.88      1.00      0.93         7
+           3       0.44      0.57      0.50         7
+           4       0.00      0.00      0.00         7
+           5       0.00      0.00      0.00         6
+
+    accuracy                           0.53        34
+   macro avg       0.36      0.51      0.42        34
+weighted avg       0.37      0.53      0.43        34
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4118
+              precision    recall  f1-score   support
+
+           1       0.44      1.00      0.61         7
+           2       0.80      0.57      0.67         7
+           3       0.20      0.14      0.17         7
+           4       1.00      0.14      0.25         7
+           5       0.14      0.17      0.15         6
+
+    accuracy                           0.41        34
+   macro avg       0.52      0.40      0.37        34
+weighted avg       0.53      0.41      0.38        34
+
+DecisionTree:
+Decision Tree Accuracy: 0.5882
+              precision    recall  f1-score   support
+
+           1       0.56      0.71      0.62         7
+           2       0.88      1.00      0.93         7
+           3       0.67      0.29      0.40         7
+           4       1.00      0.29      0.44         7
+           5       0.33      0.67      0.44         6
+
+    accuracy                           0.59        34
+   macro avg       0.69      0.59      0.57        34
+weighted avg       0.70      0.59      0.57        34
+
+RandomForest:
+Random Forest Accuracy: 0.4706
+              precision    recall  f1-score   support
+
+           1       0.54      1.00      0.70         7
+           2       0.88      1.00      0.93         7
+           3       0.29      0.29      0.29         7
+           4       0.00      0.00      0.00         7
+           5       0.00      0.00      0.00         6
+
+    accuracy                           0.47        34
+   macro avg       0.34      0.46      0.38        34
+weighted avg       0.35      0.47      0.40        34
+
+NeuralNetwork:
+Neural Network Accuracy: 0.7353
+              precision    recall  f1-score   support
+
+           1       0.64      1.00      0.78         7
+           2       0.88      1.00      0.93         7
+           3       0.62      0.71      0.67         7
+           4       1.00      0.57      0.73         7
+           5       0.67      0.33      0.44         6
+
+    accuracy                           0.74        34
+   macro avg       0.76      0.72      0.71        34
+weighted avg       0.76      0.74      0.72        34
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.5588
+              precision    recall  f1-score   support
+
+           1       0.58      1.00      0.74         7
+           2       0.88      1.00      0.93         7
+           3       0.40      0.57      0.47         7
+           4       0.00      0.00      0.00         7
+           5       0.25      0.17      0.20         6
+
+    accuracy                           0.56        34
+   macro avg       0.42      0.55      0.47        34
+weighted avg       0.43      0.56      0.48        34
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.47      1.00      0.64         7
+           2       0.88      1.00      0.93         7
+           3       0.43      0.43      0.43         7
+           4       1.00      0.14      0.25         7
+           5       0.00      0.00      0.00         6
+
+    accuracy                           0.53        34
+   macro avg       0.55      0.51      0.45        34
+weighted avg       0.57      0.53      0.46        34
+
+=== Test size 15% / Train size 85% ===
+KNN:
+KNN (k=5) Accuracy: 0.4902
+              precision    recall  f1-score   support
+
+           1       0.50      0.91      0.65        11
+           2       0.91      1.00      0.95        10
+           3       0.33      0.50      0.40        10
+           4       0.00      0.00      0.00        10
+           5       0.00      0.00      0.00        10
+
+    accuracy                           0.49        51
+   macro avg       0.35      0.48      0.40        51
+weighted avg       0.35      0.49      0.40        51
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4510
+              precision    recall  f1-score   support
+
+           1       0.48      1.00      0.65        11
+           2       0.88      0.70      0.78        10
+           3       0.12      0.10      0.11        10
+           4       1.00      0.10      0.18        10
+           5       0.27      0.30      0.29        10
+
+    accuracy                           0.45        51
+   macro avg       0.55      0.44      0.40        51
+weighted avg       0.55      0.45      0.41        51
+
+DecisionTree:
+Decision Tree Accuracy: 0.5882
+              precision    recall  f1-score   support
+
+           1       0.57      0.73      0.64        11
+           2       0.91      1.00      0.95        10
+           3       0.50      0.40      0.44        10
+           4       1.00      0.20      0.33        10
+           5       0.38      0.60      0.46        10
+
+    accuracy                           0.59        51
+   macro avg       0.67      0.59      0.57        51
+weighted avg       0.67      0.59      0.57        51
+
+RandomForest:
+Random Forest Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.65      1.00      0.79        11
+           2       0.91      1.00      0.95        10
+           3       0.27      0.30      0.29        10
+           4       0.40      0.20      0.27        10
+           5       0.14      0.10      0.12        10
+
+    accuracy                           0.53        51
+   macro avg       0.47      0.52      0.48        51
+weighted avg       0.48      0.53      0.49        51
+
+NeuralNetwork:
+Neural Network Accuracy: 0.7059
+              precision    recall  f1-score   support
+
+           1       0.85      1.00      0.92        11
+           2       0.91      1.00      0.95        10
+           3       0.44      0.80      0.57        10
+           4       1.00      0.50      0.67        10
+           5       0.50      0.20      0.29        10
+
+    accuracy                           0.71        51
+   macro avg       0.74      0.70      0.68        51
+weighted avg       0.74      0.71      0.68        51
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.5686
+              precision    recall  f1-score   support
+
+           1       0.65      1.00      0.79        11
+           2       0.91      1.00      0.95        10
+           3       0.37      0.70      0.48        10
+           4       0.00      0.00      0.00        10
+           5       0.25      0.10      0.14        10
+
+    accuracy                           0.57        51
+   macro avg       0.43      0.56      0.47        51
+weighted avg       0.44      0.57      0.48        51
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.48      1.00      0.65        11
+           2       0.91      1.00      0.95        10
+           3       0.30      0.30      0.30        10
+           4       1.00      0.10      0.18        10
+           5       0.33      0.20      0.25        10
+
+    accuracy                           0.53        51
+   macro avg       0.60      0.52      0.47        51
+weighted avg       0.60      0.53      0.47        51
+
+=== Test size 20% / Train size 80% ===
+KNN:
+KNN (k=5) Accuracy: 0.4265
+              precision    recall  f1-score   support
+
+           1       0.44      0.73      0.55        15
+           2       0.88      1.00      0.93        14
+           3       0.19      0.31      0.24        13
+           4       0.00      0.00      0.00        13
+           5       0.00      0.00      0.00        13
+
+    accuracy                           0.43        68
+   macro avg       0.30      0.41      0.34        68
+weighted avg       0.31      0.43      0.36        68
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.5000
+              precision    recall  f1-score   support
+
+           1       0.45      0.93      0.61        15
+           2       0.85      0.79      0.81        14
+           3       0.40      0.46      0.43        13
+           4       0.50      0.08      0.13        13
+           5       0.29      0.15      0.20        13
+
+    accuracy                           0.50        68
+   macro avg       0.50      0.48      0.44        68
+weighted avg       0.50      0.50      0.45        68
+
+DecisionTree:
+Decision Tree Accuracy: 0.5588
+              precision    recall  f1-score   support
+
+           1       0.48      0.87      0.62        15
+           2       0.88      1.00      0.93        14
+           3       0.60      0.23      0.33        13
+           4       0.43      0.23      0.30        13
+           5       0.38      0.38      0.38        13
+
+    accuracy                           0.56        68
+   macro avg       0.55      0.54      0.51        68
+weighted avg       0.56      0.56      0.52        68
+
+RandomForest:
+Random Forest Accuracy: 0.5147
+              precision    recall  f1-score   support
+
+           1       0.61      0.73      0.67        15
+           2       0.88      1.00      0.93        14
+           3       0.21      0.23      0.22        13
+           4       0.60      0.23      0.33        13
+           5       0.27      0.31      0.29        13
+
+    accuracy                           0.51        68
+   macro avg       0.51      0.50      0.49        68
+weighted avg       0.52      0.51      0.50        68
+
+NeuralNetwork:
+Neural Network Accuracy: 0.6471
+              precision    recall  f1-score   support
+
+           1       0.93      0.87      0.90        15
+           2       0.93      1.00      0.97        14
+           3       0.39      0.69      0.50        13
+           4       1.00      0.46      0.63        13
+           5       0.20      0.15      0.17        13
+
+    accuracy                           0.65        68
+   macro avg       0.69      0.63      0.63        68
+weighted avg       0.70      0.65      0.65        68
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.5000
+              precision    recall  f1-score   support
+
+           1       0.71      0.80      0.75        15
+           2       0.88      1.00      0.93        14
+           3       0.26      0.54      0.35        13
+           4       0.00      0.00      0.00        13
+           5       0.12      0.08      0.10        13
+
+    accuracy                           0.50        68
+   macro avg       0.39      0.48      0.43        68
+weighted avg       0.41      0.50      0.44        68
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.4853
+              precision    recall  f1-score   support
+
+           1       0.44      0.93      0.60        15
+           2       0.88      1.00      0.93        14
+           3       0.23      0.23      0.23        13
+           4       0.50      0.08      0.13        13
+           5       0.20      0.08      0.11        13
+
+    accuracy                           0.49        68
+   macro avg       0.45      0.46      0.40        68
+weighted avg       0.45      0.49      0.41        68
+
+=== Test size 25% / Train size 75% ===
+KNN:
+KNN (k=5) Accuracy: 0.4471
+              precision    recall  f1-score   support
+
+           1       0.44      0.67      0.53        18
+           2       0.86      1.00      0.92        18
+           3       0.25      0.35      0.29        17
+           4       0.00      0.00      0.00        16
+           5       0.18      0.12      0.15        16
+
+    accuracy                           0.45        85
+   macro avg       0.35      0.43      0.38        85
+weighted avg       0.36      0.45      0.39        85
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4824
+              precision    recall  f1-score   support
+
+           1       0.46      0.94      0.62        18
+           2       0.81      0.72      0.76        18
+           3       0.33      0.29      0.31        17
+           4       0.67      0.12      0.21        16
+           5       0.29      0.25      0.27        16
+
+    accuracy                           0.48        85
+   macro avg       0.51      0.47      0.43        85
+weighted avg       0.52      0.48      0.45        85
+
+DecisionTree:
+Decision Tree Accuracy: 0.5647
+              precision    recall  f1-score   support
+
+           1       0.54      0.72      0.62        18
+           2       0.85      0.94      0.89        18
+           3       0.67      0.24      0.35        17
+           4       0.60      0.19      0.29        16
+           5       0.37      0.69      0.48        16
+
+    accuracy                           0.56        85
+   macro avg       0.60      0.56      0.53        85
+weighted avg       0.61      0.56      0.53        85
+
+RandomForest:
+Random Forest Accuracy: 0.4824
+              precision    recall  f1-score   support
+
+           1       0.54      0.72      0.62        18
+           2       0.85      0.94      0.89        18
+           3       0.27      0.24      0.25        17
+           4       0.40      0.25      0.31        16
+           5       0.19      0.19      0.19        16
+
+    accuracy                           0.48        85
+   macro avg       0.45      0.47      0.45        85
+weighted avg       0.46      0.48      0.46        85
+
+NeuralNetwork:
+Neural Network Accuracy: 0.6353
+              precision    recall  f1-score   support
+
+           1       0.82      0.78      0.80        18
+           2       0.90      1.00      0.95        18
+           3       0.42      0.65      0.51        17
+           4       0.78      0.44      0.56        16
+           5       0.31      0.25      0.28        16
+
+    accuracy                           0.64        85
+   macro avg       0.65      0.62      0.62        85
+weighted avg       0.65      0.64      0.63        85
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.5059
+              precision    recall  f1-score   support
+
+           1       0.64      0.78      0.70        18
+           2       0.89      0.94      0.92        18
+           3       0.28      0.53      0.37        17
+           4       0.00      0.00      0.00        16
+           5       0.25      0.19      0.21        16
+
+    accuracy                           0.51        85
+   macro avg       0.41      0.49      0.44        85
+weighted avg       0.43      0.51      0.46        85
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.4824
+              precision    recall  f1-score   support
+
+           1       0.43      0.83      0.57        18
+           2       0.82      1.00      0.90        18
+           3       0.25      0.18      0.21        17
+           4       0.50      0.12      0.20        16
+           5       0.25      0.19      0.21        16
+
+    accuracy                           0.48        85
+   macro avg       0.45      0.46      0.42        85
+weighted avg       0.46      0.48      0.43        85
+
+=== Test size 30% / Train size 70% ===
+KNN:
+KNN (k=5) Accuracy: 0.4118
+              precision    recall  f1-score   support
+
+           1       0.42      0.62      0.50        21
+           2       0.83      0.95      0.89        21
+           3       0.17      0.20      0.19        20
+           4       0.14      0.05      0.07        20
+           5       0.24      0.20      0.22        20
+
+    accuracy                           0.41       102
+   macro avg       0.36      0.40      0.37       102
+weighted avg       0.37      0.41      0.38       102
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4902
+              precision    recall  f1-score   support
+
+           1       0.50      1.00      0.67        21
+           2       0.75      0.71      0.73        21
+           3       0.30      0.30      0.30        20
+           4       0.75      0.15      0.25        20
+           5       0.31      0.25      0.28        20
+
+    accuracy                           0.49       102
+   macro avg       0.52      0.48      0.45       102
+weighted avg       0.52      0.49      0.45       102
+
+DecisionTree:
+Decision Tree Accuracy: 0.5392
+              precision    recall  f1-score   support
+
+           1       0.52      0.71      0.60        21
+           2       0.80      0.95      0.87        21
+           3       0.57      0.20      0.30        20
+           4       0.50      0.15      0.23        20
+           5       0.37      0.65      0.47        20
+
+    accuracy                           0.54       102
+   macro avg       0.55      0.53      0.49       102
+weighted avg       0.55      0.54      0.50       102
+
+RandomForest:
+Random Forest Accuracy: 0.4706
+              precision    recall  f1-score   support
+
+           1       0.52      0.71      0.60        21
+           2       0.87      0.95      0.91        21
+           3       0.31      0.25      0.28        20
+           4       0.36      0.20      0.26        20
+           5       0.17      0.20      0.19        20
+
+    accuracy                           0.47       102
+   macro avg       0.45      0.46      0.45       102
+weighted avg       0.45      0.47      0.45       102
+
+NeuralNetwork:
+Neural Network Accuracy: 0.5490
+              precision    recall  f1-score   support
+
+           1       0.69      0.86      0.77        21
+           2       0.75      1.00      0.86        21
+           3       0.28      0.35      0.31        20
+           4       0.67      0.30      0.41        20
+           5       0.29      0.20      0.24        20
+
+    accuracy                           0.55       102
+   macro avg       0.53      0.54      0.52       102
+weighted avg       0.54      0.55      0.52       102
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.4706
+              precision    recall  f1-score   support
+
+           1       0.57      0.76      0.65        21
+           2       0.91      0.95      0.93        21
+           3       0.24      0.40      0.30        20
+           4       0.00      0.00      0.00        20
+           5       0.24      0.20      0.22        20
+
+    accuracy                           0.47       102
+   macro avg       0.39      0.46      0.42       102
+weighted avg       0.40      0.47      0.43       102
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5000
+              precision    recall  f1-score   support
+
+           1       0.47      0.86      0.61        21
+           2       0.78      1.00      0.88        21
+           3       0.27      0.20      0.23        20
+           4       0.57      0.20      0.30        20
+           5       0.27      0.20      0.23        20
+
+    accuracy                           0.50       102
+   macro avg       0.47      0.49      0.45       102
+weighted avg       0.47      0.50      0.45       102
+
+=== Test size 35% / Train size 65% ===
+KNN:
+KNN (k=5) Accuracy: 0.4454
+              precision    recall  f1-score   support
+
+           1       0.44      0.72      0.55        25
+           2       0.88      0.84      0.86        25
+           3       0.26      0.30      0.28        23
+           4       0.21      0.13      0.16        23
+           5       0.31      0.17      0.22        23
+
+    accuracy                           0.45       119
+   macro avg       0.42      0.43      0.41       119
+weighted avg       0.43      0.45      0.42       119
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4874
+              precision    recall  f1-score   support
+
+           1       0.50      0.96      0.66        25
+           2       0.77      0.68      0.72        25
+           3       0.30      0.35      0.32        23
+           4       0.80      0.17      0.29        23
+           5       0.29      0.22      0.25        23
+
+    accuracy                           0.49       119
+   macro avg       0.53      0.48      0.45       119
+weighted avg       0.54      0.49      0.46       119
+
+DecisionTree:
+Decision Tree Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.53      0.64      0.58        25
+           2       0.79      0.92      0.85        25
+           3       0.62      0.22      0.32        23
+           4       0.42      0.35      0.38        23
+           5       0.33      0.48      0.39        23
+
+    accuracy                           0.53       119
+   macro avg       0.54      0.52      0.51       119
+weighted avg       0.55      0.53      0.51       119
+
+RandomForest:
+Random Forest Accuracy: 0.5126
+              precision    recall  f1-score   support
+
+           1       0.58      0.72      0.64        25
+           2       0.76      0.88      0.81        25
+           3       0.37      0.30      0.33        23
+           4       0.44      0.30      0.36        23
+           5       0.29      0.30      0.30        23
+
+    accuracy                           0.51       119
+   macro avg       0.49      0.50      0.49       119
+weighted avg       0.49      0.51      0.50       119
+
+NeuralNetwork:
+Neural Network Accuracy: 0.5798
+              precision    recall  f1-score   support
+
+           1       0.69      0.80      0.74        25
+           2       0.81      0.88      0.85        25
+           3       0.32      0.39      0.35        23
+           4       0.65      0.48      0.55        23
+           5       0.39      0.30      0.34        23
+
+    accuracy                           0.58       119
+   macro avg       0.57      0.57      0.57       119
+weighted avg       0.58      0.58      0.57       119
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.4538
+              precision    recall  f1-score   support
+
+           1       0.49      0.76      0.59        25
+           2       0.92      0.88      0.90        25
+           3       0.23      0.39      0.29        23
+           4       0.00      0.00      0.00        23
+           5       0.27      0.17      0.21        23
+
+    accuracy                           0.45       119
+   macro avg       0.38      0.44      0.40       119
+weighted avg       0.39      0.45      0.41       119
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5462
+              precision    recall  f1-score   support
+
+           1       0.47      0.88      0.61        25
+           2       0.81      0.88      0.85        25
+           3       0.41      0.39      0.40        23
+           4       0.67      0.26      0.38        23
+           5       0.43      0.26      0.32        23
+
+    accuracy                           0.55       119
+   macro avg       0.56      0.53      0.51       119
+weighted avg       0.56      0.55      0.52       119
+
+=== Test size 40% / Train size 60% ===
+KNN:
+KNN (k=5) Accuracy: 0.4265
+              precision    recall  f1-score   support
+
+           1       0.43      0.69      0.53        29
+           2       0.86      0.86      0.86        28
+           3       0.21      0.30      0.25        27
+           4       0.29      0.15      0.20        26
+           5       0.22      0.08      0.11        26
+
+    accuracy                           0.43       136
+   macro avg       0.40      0.41      0.39       136
+weighted avg       0.41      0.43      0.40       136
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4779
+              precision    recall  f1-score   support
+
+           1       0.50      0.93      0.65        29
+           2       0.76      0.68      0.72        28
+           3       0.29      0.33      0.31        27
+           4       0.40      0.23      0.29        26
+           5       0.36      0.15      0.22        26
+
+    accuracy                           0.48       136
+   macro avg       0.46      0.47      0.44       136
+weighted avg       0.47      0.48      0.45       136
+
+DecisionTree:
+Decision Tree Accuracy: 0.5074
+              precision    recall  f1-score   support
+
+           1       0.55      0.62      0.58        29
+           2       0.89      0.89      0.89        28
+           3       0.24      0.22      0.23        27
+           4       0.57      0.31      0.40        26
+           5       0.33      0.46      0.39        26
+
+    accuracy                           0.51       136
+   macro avg       0.52      0.50      0.50       136
+weighted avg       0.52      0.51      0.50       136
+
+RandomForest:
+Random Forest Accuracy: 0.4926
+              precision    recall  f1-score   support
+
+           1       0.53      0.62      0.57        29
+           2       0.76      0.89      0.82        28
+           3       0.21      0.15      0.17        27
+           4       0.46      0.42      0.44        26
+           5       0.35      0.35      0.35        26
+
+    accuracy                           0.49       136
+   macro avg       0.46      0.49      0.47       136
+weighted avg       0.46      0.49      0.48       136
+
+NeuralNetwork:
+Neural Network Accuracy: 0.4779
+              precision    recall  f1-score   support
+
+           1       0.54      0.90      0.68        29
+           2       0.79      0.93      0.85        28
+           3       0.17      0.11      0.13        27
+           4       0.19      0.19      0.19        26
+           5       0.50      0.19      0.28        26
+
+    accuracy                           0.48       136
+   macro avg       0.44      0.46      0.43       136
+weighted avg       0.44      0.48      0.44       136
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.4779
+              precision    recall  f1-score   support
+
+           1       0.45      0.76      0.56        29
+           2       0.89      0.89      0.89        28
+           3       0.28      0.41      0.33        27
+           4       0.30      0.12      0.17        26
+           5       0.40      0.15      0.22        26
+
+    accuracy                           0.48       136
+   macro avg       0.46      0.47      0.44       136
+weighted avg       0.47      0.48      0.44       136
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5147
+              precision    recall  f1-score   support
+
+           1       0.46      0.90      0.61        29
+           2       0.78      0.89      0.83        28
+           3       0.33      0.33      0.33        27
+           4       0.50      0.27      0.35        26
+           5       0.43      0.12      0.18        26
+
+    accuracy                           0.51       136
+   macro avg       0.50      0.50      0.46       136
+weighted avg       0.50      0.51      0.47       136
+
+=== Test size 45% / Train size 55% ===
+KNN:
+KNN (k=5) Accuracy: 0.3922
+              precision    recall  f1-score   support
+
+           1       0.42      0.62      0.50        32
+           2       0.79      0.84      0.82        32
+           3       0.19      0.27      0.22        30
+           4       0.25      0.13      0.17        30
+           5       0.08      0.03      0.05        29
+
+    accuracy                           0.39       153
+   macro avg       0.35      0.38      0.35       153
+weighted avg       0.35      0.39      0.36       153
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4771
+              precision    recall  f1-score   support
+
+           1       0.52      0.91      0.66        32
+           2       0.72      0.66      0.69        32
+           3       0.32      0.37      0.34        30
+           4       0.42      0.17      0.24        30
+           5       0.32      0.24      0.27        29
+
+    accuracy                           0.48       153
+   macro avg       0.46      0.47      0.44       153
+weighted avg       0.47      0.48      0.45       153
+
+DecisionTree:
+Decision Tree Accuracy: 0.4902
+              precision    recall  f1-score   support
+
+           1       0.65      0.62      0.63        32
+           2       0.72      0.91      0.81        32
+           3       0.26      0.37      0.30        30
+           4       0.43      0.33      0.38        30
+           5       0.31      0.17      0.22        29
+
+    accuracy                           0.49       153
+   macro avg       0.47      0.48      0.47       153
+weighted avg       0.48      0.49      0.48       153
+
+RandomForest:
+Random Forest Accuracy: 0.4967
+              precision    recall  f1-score   support
+
+           1       0.61      0.72      0.66        32
+           2       0.78      0.91      0.84        32
+           3       0.22      0.20      0.21        30
+           4       0.39      0.40      0.39        30
+           5       0.30      0.21      0.24        29
+
+    accuracy                           0.50       153
+   macro avg       0.46      0.49      0.47       153
+weighted avg       0.47      0.50      0.48       153
+
+NeuralNetwork:
+Neural Network Accuracy: 0.6078
+              precision    recall  f1-score   support
+
+           1       0.75      0.75      0.75        32
+           2       0.79      0.94      0.86        32
+           3       0.42      0.53      0.47        30
+           4       0.64      0.47      0.54        30
+           5       0.39      0.31      0.35        29
+
+    accuracy                           0.61       153
+   macro avg       0.60      0.60      0.59       153
+weighted avg       0.60      0.61      0.60       153
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.5098
+              precision    recall  f1-score   support
+
+           1       0.54      0.81      0.65        32
+           2       0.85      0.91      0.88        32
+           3       0.28      0.40      0.33        30
+           4       0.44      0.13      0.21        30
+           5       0.37      0.24      0.29        29
+
+    accuracy                           0.51       153
+   macro avg       0.50      0.50      0.47       153
+weighted avg       0.50      0.51      0.48       153
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.4837
+              precision    recall  f1-score   support
+
+           1       0.51      0.91      0.65        32
+           2       0.67      0.88      0.76        32
+           3       0.29      0.30      0.30        30
+           4       0.50      0.23      0.32        30
+           5       0.11      0.03      0.05        29
+
+    accuracy                           0.48       153
+   macro avg       0.42      0.47      0.41       153
+weighted avg       0.42      0.48      0.42       153
+
+=== Test size 50% / Train size 50% ===
+KNN:
+KNN (k=5) Accuracy: 0.4083
+              precision    recall  f1-score   support
+
+           1       0.43      0.64      0.51        36
+           2       0.81      0.83      0.82        35
+           3       0.20      0.27      0.23        33
+           4       0.27      0.12      0.17        33
+           5       0.22      0.12      0.16        32
+
+    accuracy                           0.41       169
+   macro avg       0.38      0.40      0.38       169
+weighted avg       0.39      0.41      0.39       169
+
+NaiveBayes:
+Naive Bayes Accuracy: 0.4852
+              precision    recall  f1-score   support
+
+           1       0.52      0.92      0.66        36
+           2       0.77      0.66      0.71        35
+           3       0.33      0.33      0.33        33
+           4       0.45      0.15      0.23        33
+           5       0.32      0.31      0.32        32
+
+    accuracy                           0.49       169
+   macro avg       0.48      0.47      0.45       169
+weighted avg       0.48      0.49      0.46       169
+
+DecisionTree:
+Decision Tree Accuracy: 0.5207
+              precision    recall  f1-score   support
+
+           1       0.60      0.67      0.63        36
+           2       0.74      0.91      0.82        35
+           3       0.42      0.15      0.22        33
+           4       0.52      0.36      0.43        33
+           5       0.29      0.47      0.36        32
+
+    accuracy                           0.52       169
+   macro avg       0.52      0.51      0.49       169
+weighted avg       0.52      0.52      0.50       169
+
+RandomForest:
+Random Forest Accuracy: 0.4615
+              precision    recall  f1-score   support
+
+           1       0.60      0.69      0.64        36
+           2       0.81      0.86      0.83        35
+           3       0.18      0.18      0.18        33
+           4       0.42      0.33      0.37        33
+           5       0.19      0.19      0.19        32
+
+    accuracy                           0.46       169
+   macro avg       0.44      0.45      0.44       169
+weighted avg       0.45      0.46      0.45       169
+
+NeuralNetwork:
+Neural Network Accuracy: 0.5680
+              precision    recall  f1-score   support
+
+           1       0.73      0.75      0.74        36
+           2       0.79      0.94      0.86        35
+           3       0.29      0.30      0.30        33
+           4       0.67      0.36      0.47        33
+           5       0.37      0.44      0.40        32
+
+    accuracy                           0.57       169
+   macro avg       0.57      0.56      0.55       169
+weighted avg       0.58      0.57      0.56       169
+
+SVM:
+SVM (kernel=rbf) Accuracy: 0.4734
+              precision    recall  f1-score   support
+
+           1       0.58      0.83      0.68        36
+           2       0.88      0.80      0.84        35
+           3       0.22      0.21      0.22        33
+           4       0.31      0.12      0.17        33
+           5       0.28      0.34      0.31        32
+
+    accuracy                           0.47       169
+   macro avg       0.45      0.46      0.44       169
+weighted avg       0.46      0.47      0.45       169
+
+Ensemble:
+Ensemble (Voting) Accuracy: 0.5148
+              precision    recall  f1-score   support
+
+           1       0.51      0.92      0.65        36
+           2       0.70      0.89      0.78        35
+           3       0.34      0.30      0.32        33
+           4       0.58      0.21      0.31        33
+           5       0.32      0.19      0.24        32
+
+    accuracy                           0.51       169
+   macro avg       0.49      0.50      0.46       169
+weighted avg       0.50      0.51      0.47       169
+
+=== K-Fold Cross Validation, K=2 ===
+KNN: Mean accuracy: 0.4763 (Std: 0.0089)
+NaiveBayes: Mean accuracy: 0.4586 (Std: 0.0089)
+DecisionTree: Mean accuracy: 0.5059 (Std: 0.0148)
+RandomForest: Mean accuracy: 0.4704 (Std: 0.0325)
+NeuralNetwork: Mean accuracy: 0.6420 (Std: 0.0030)
+SVM: Mean accuracy: 0.4615 (Std: 0.0237)
+Ensemble: Mean accuracy: 0.4793 (Std: 0.0000)
+=== K-Fold Cross Validation, K=3 ===
+KNN: Mean accuracy: 0.4556 (Std: 0.0158)
+NaiveBayes: Mean accuracy: 0.4496 (Std: 0.0284)
+DecisionTree: Mean accuracy: 0.5413 (Std: 0.0343)
+RandomForest: Mean accuracy: 0.4969 (Std: 0.0531)
+NeuralNetwork: Mean accuracy: 0.6243 (Std: 0.0291)
+SVM: Mean accuracy: 0.4733 (Std: 0.0296)
+Ensemble: Mean accuracy: 0.4970 (Std: 0.0127)
+=== K-Fold Cross Validation, K=4 ===
+KNN: Mean accuracy: 0.4853 (Std: 0.0222)
+NaiveBayes: Mean accuracy: 0.4438 (Std: 0.0400)
+DecisionTree: Mean accuracy: 0.5030 (Std: 0.0405)
+RandomForest: Mean accuracy: 0.4968 (Std: 0.0410)
+NeuralNetwork: Mean accuracy: 0.6361 (Std: 0.0386)
+SVM: Mean accuracy: 0.4910 (Std: 0.0297)
+Ensemble: Mean accuracy: 0.4941 (Std: 0.0263)
+=== K-Fold Cross Validation, K=5 ===
+KNN: Mean accuracy: 0.4795 (Std: 0.0391)
+NaiveBayes: Mean accuracy: 0.4556 (Std: 0.0630)
+DecisionTree: Mean accuracy: 0.5090 (Std: 0.0342)
+RandomForest: Mean accuracy: 0.4821 (Std: 0.0434)
+NeuralNetwork: Mean accuracy: 0.6063 (Std: 0.0440)
+SVM: Mean accuracy: 0.4880 (Std: 0.0678)
+Ensemble: Mean accuracy: 0.5208 (Std: 0.0145)
+=== K-Fold Cross Validation, K=6 ===
+KNN: Mean accuracy: 0.4675 (Std: 0.0557)
+NaiveBayes: Mean accuracy: 0.4585 (Std: 0.0451)
+DecisionTree: Mean accuracy: 0.4884 (Std: 0.0533)
+RandomForest: Mean accuracy: 0.4821 (Std: 0.0402)
+NeuralNetwork: Mean accuracy: 0.6153 (Std: 0.0235)
+SVM: Mean accuracy: 0.4938 (Std: 0.0415)
+Ensemble: Mean accuracy: 0.5149 (Std: 0.0351)
+=== K-Fold Cross Validation, K=7 ===
+KNN: Mean accuracy: 0.4705 (Std: 0.0388)
+NaiveBayes: Mean accuracy: 0.4436 (Std: 0.0676)
+DecisionTree: Mean accuracy: 0.4939 (Std: 0.0383)
+RandomForest: Mean accuracy: 0.4911 (Std: 0.0614)
+NeuralNetwork: Mean accuracy: 0.6241 (Std: 0.0571)
+SVM: Mean accuracy: 0.4759 (Std: 0.0502)
+Ensemble: Mean accuracy: 0.4820 (Std: 0.0461)
+=== K-Fold Cross Validation, K=8 ===
+KNN: Mean accuracy: 0.4735 (Std: 0.0537)
+NaiveBayes: Mean accuracy: 0.4495 (Std: 0.0468)
+DecisionTree: Mean accuracy: 0.4732 (Std: 0.0653)
+RandomForest: Mean accuracy: 0.4733 (Std: 0.0583)
+NeuralNetwork: Mean accuracy: 0.6418 (Std: 0.0586)
+SVM: Mean accuracy: 0.4641 (Std: 0.0624)
+Ensemble: Mean accuracy: 0.5059 (Std: 0.0550)
+=== K-Fold Cross Validation, K=9 ===
+KNN: Mean accuracy: 0.4678 (Std: 0.0470)
+NaiveBayes: Mean accuracy: 0.4523 (Std: 0.0573)
+DecisionTree: Mean accuracy: 0.4855 (Std: 0.0617)
+RandomForest: Mean accuracy: 0.4648 (Std: 0.0556)
+NeuralNetwork: Mean accuracy: 0.6417 (Std: 0.0541)
+SVM: Mean accuracy: 0.4644 (Std: 0.0471)
+Ensemble: Mean accuracy: 0.5090 (Std: 0.0552)
+=== K-Fold Cross Validation, K=10 ===
+KNN: Mean accuracy: 0.4737 (Std: 0.0642)
+NaiveBayes: Mean accuracy: 0.4463 (Std: 0.1032)
+DecisionTree: Mean accuracy: 0.5086 (Std: 0.0566)
+RandomForest: Mean accuracy: 0.4939 (Std: 0.0476)
+NeuralNetwork: Mean accuracy: 0.6328 (Std: 0.0598)
+SVM: Mean accuracy: 0.4589 (Std: 0.0618)
+Ensemble: Mean accuracy: 0.4879 (Std: 0.0706)
+=== K-Fold Classification Report, K=2 ===
+KNN classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.44      0.55      0.49        71
+           2       0.88      0.83      0.85        70
+           3       0.24      0.29      0.26        66
+           4       0.21      0.18      0.20        66
+           5       0.17      0.12      0.14        65
+
+    accuracy                           0.40       338
+   macro avg       0.39      0.39      0.39       338
+weighted avg       0.40      0.40      0.40       338
+
+NaiveBayes classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.48      0.83      0.61        71
+           2       0.77      0.70      0.73        70
+           3       0.30      0.27      0.28        66
+           4       0.39      0.20      0.26        66
+           5       0.28      0.25      0.26        65
+
+    accuracy                           0.46       338
+   macro avg       0.44      0.45      0.43       338
+weighted avg       0.45      0.46      0.44       338
+
+DecisionTree classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.57      0.73      0.64        71
+           2       0.86      0.84      0.85        70
+           3       0.35      0.44      0.39        66
+           4       0.51      0.29      0.37        66
+           5       0.21      0.18      0.20        65
+
+    accuracy                           0.51       338
+   macro avg       0.50      0.50      0.49       338
+weighted avg       0.51      0.51      0.50       338
+
+RandomForest classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.64      0.69      0.66        71
+           2       0.90      0.86      0.88        70
+           3       0.25      0.27      0.26        66
+           4       0.38      0.27      0.32        66
+           5       0.19      0.22      0.20        65
+
+    accuracy                           0.47       338
+   macro avg       0.47      0.46      0.46       338
+weighted avg       0.48      0.47      0.47       338
+
+NeuralNetwork classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.75      0.85      0.79        71
+           2       0.94      0.94      0.94        70
+           3       0.48      0.55      0.51        66
+           4       0.67      0.48      0.56        66
+           5       0.35      0.35      0.35        65
+
+    accuracy                           0.64       338
+   macro avg       0.64      0.63      0.63       338
+weighted avg       0.64      0.64      0.64       338
+
+SVM classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.55      0.72      0.62        71
+           2       0.97      0.83      0.89        70
+           3       0.27      0.38      0.32        66
+           4       0.11      0.03      0.05        66
+           5       0.27      0.31      0.29        65
+
+    accuracy                           0.46       338
+   macro avg       0.43      0.45      0.43       338
+weighted avg       0.44      0.46      0.44       338
+
+Ensemble classification report (K=2):
+              precision    recall  f1-score   support
+
+           1       0.46      0.73      0.57        71
+           2       0.79      0.87      0.83        70
+           3       0.33      0.38      0.35        66
+           4       0.40      0.26      0.31        66
+           5       0.23      0.11      0.15        65
+
+    accuracy                           0.48       338
+   macro avg       0.44      0.47      0.44       338
+weighted avg       0.45      0.48      0.45       338
+
+=== K-Fold Classification Report, K=3 ===
+KNN classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.43      0.61      0.50        71
+           2       0.87      0.86      0.86        70
+           3       0.27      0.35      0.30        66
+           4       0.22      0.15      0.18        66
+           5       0.11      0.06      0.08        65
+
+    accuracy                           0.41       338
+   macro avg       0.38      0.40      0.39       338
+weighted avg       0.39      0.41      0.39       338
+
+NaiveBayes classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.50      0.89      0.64        71
+           2       0.78      0.67      0.72        70
+           3       0.19      0.15      0.17        66
+           4       0.34      0.15      0.21        66
+           5       0.31      0.34      0.32        65
+
+    accuracy                           0.45       338
+   macro avg       0.43      0.44      0.41       338
+weighted avg       0.43      0.45      0.42       338
+
+DecisionTree classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.63      0.76      0.69        71
+           2       0.90      0.81      0.86        70
+           3       0.34      0.30      0.32        66
+           4       0.55      0.32      0.40        66
+           5       0.34      0.48      0.39        65
+
+    accuracy                           0.54       338
+   macro avg       0.55      0.53      0.53       338
+weighted avg       0.56      0.54      0.54       338
+
+RandomForest classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.68      0.79      0.73        71
+           2       0.88      0.83      0.85        70
+           3       0.26      0.29      0.28        66
+           4       0.43      0.35      0.39        66
+           5       0.18      0.18      0.18        65
+
+    accuracy                           0.50       338
+   macro avg       0.49      0.49      0.49       338
+weighted avg       0.50      0.50      0.50       338
+
+NeuralNetwork classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.75      0.85      0.79        71
+           2       0.92      0.96      0.94        70
+           3       0.46      0.55      0.50        66
+           4       0.65      0.36      0.47        66
+           5       0.35      0.37      0.36        65
+
+    accuracy                           0.62       338
+   macro avg       0.62      0.62      0.61       338
+weighted avg       0.63      0.62      0.62       338
+
+SVM classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.58      0.77      0.66        71
+           2       0.97      0.83      0.89        70
+           3       0.25      0.20      0.22        66
+           4       0.15      0.06      0.09        66
+           5       0.29      0.46      0.36        65
+
+    accuracy                           0.47       338
+   macro avg       0.45      0.46      0.44       338
+weighted avg       0.46      0.47      0.45       338
+
+Ensemble classification report (K=3):
+              precision    recall  f1-score   support
+
+           1       0.49      0.90      0.64        71
+           2       0.79      0.89      0.84        70
+           3       0.31      0.26      0.28        66
+           4       0.39      0.21      0.27        66
+           5       0.28      0.17      0.21        65
+
+    accuracy                           0.50       338
+   macro avg       0.45      0.49      0.45       338
+weighted avg       0.46      0.50      0.46       338
+
+=== K-Fold Classification Report, K=4 ===
+KNN classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.43      0.61      0.50        71
+           2       0.87      0.87      0.87        70
+           3       0.22      0.29      0.25        66
+           4       0.16      0.11      0.13        66
+           5       0.12      0.08      0.10        65
+
+    accuracy                           0.40       338
+   macro avg       0.36      0.39      0.37       338
+weighted avg       0.37      0.40      0.38       338
+
+NaiveBayes classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.50      0.86      0.64        71
+           2       0.80      0.67      0.73        70
+           3       0.16      0.12      0.14        66
+           4       0.43      0.18      0.26        66
+           5       0.28      0.34      0.31        65
+
+    accuracy                           0.44       338
+   macro avg       0.43      0.43      0.41       338
+weighted avg       0.44      0.44      0.42       338
+
+DecisionTree classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.64      0.73      0.68        71
+           2       0.88      0.84      0.86        70
+           3       0.30      0.36      0.33        66
+           4       0.38      0.30      0.34        66
+           5       0.26      0.23      0.25        65
+
+    accuracy                           0.50       338
+   macro avg       0.49      0.49      0.49       338
+weighted avg       0.50      0.50      0.50       338
+
+RandomForest classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.68      0.77      0.72        71
+           2       0.82      0.86      0.84        70
+           3       0.27      0.26      0.26        66
+           4       0.44      0.35      0.39        66
+           5       0.19      0.20      0.19        65
+
+    accuracy                           0.50       338
+   macro avg       0.48      0.49      0.48       338
+weighted avg       0.49      0.50      0.49       338
+
+NeuralNetwork classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.77      0.86      0.81        71
+           2       0.93      0.93      0.93        70
+           3       0.48      0.45      0.47        66
+           4       0.67      0.50      0.57        66
+           5       0.34      0.40      0.37        65
+
+    accuracy                           0.64       338
+   macro avg       0.64      0.63      0.63       338
+weighted avg       0.64      0.64      0.64       338
+
+SVM classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.60      0.85      0.70        71
+           2       0.97      0.86      0.91        70
+           3       0.31      0.33      0.32        66
+           4       0.06      0.02      0.02        66
+           5       0.26      0.35      0.30        65
+
+    accuracy                           0.49       338
+   macro avg       0.44      0.48      0.45       338
+weighted avg       0.45      0.49      0.46       338
+
+Ensemble classification report (K=4):
+              precision    recall  f1-score   support
+
+           1       0.49      0.92      0.64        71
+           2       0.81      0.91      0.86        70
+           3       0.27      0.21      0.24        66
+           4       0.34      0.17      0.22        66
+           5       0.30      0.20      0.24        65
+
+    accuracy                           0.49       338
+   macro avg       0.44      0.48      0.44       338
+weighted avg       0.45      0.49      0.45       338
+
+=== K-Fold Classification Report, K=5 ===
+KNN classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.48      0.76      0.59        71
+           2       0.88      0.81      0.84        70
+           3       0.29      0.38      0.33        66
+           4       0.17      0.11      0.13        66
+           5       0.00      0.00      0.00        65
+
+    accuracy                           0.42       338
+   macro avg       0.36      0.41      0.38       338
+weighted avg       0.37      0.42      0.39       338
+
+NaiveBayes classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.51      0.90      0.65        71
+           2       0.81      0.67      0.73        70
+           3       0.16      0.14      0.15        66
+           4       0.46      0.17      0.24        66
+           5       0.30      0.35      0.33        65
+
+    accuracy                           0.46       338
+   macro avg       0.45      0.45      0.42       338
+weighted avg       0.46      0.46      0.43       338
+
+DecisionTree classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.58      0.68      0.62        71
+           2       0.92      0.86      0.89        70
+           3       0.29      0.33      0.31        66
+           4       0.43      0.35      0.39        66
+           5       0.31      0.29      0.30        65
+
+    accuracy                           0.51       338
+   macro avg       0.51      0.50      0.50       338
+weighted avg       0.51      0.51      0.51       338
+
+RandomForest classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.67      0.82      0.73        71
+           2       0.86      0.90      0.88        70
+           3       0.21      0.23      0.22        66
+           4       0.34      0.23      0.27        66
+           5       0.19      0.18      0.19        65
+
+    accuracy                           0.48       338
+   macro avg       0.45      0.47      0.46       338
+weighted avg       0.46      0.48      0.47       338
+
+NeuralNetwork classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.80      0.90      0.85        71
+           2       0.92      0.94      0.93        70
+           3       0.38      0.39      0.39        66
+           4       0.62      0.44      0.51        66
+           5       0.28      0.31      0.29        65
+
+    accuracy                           0.61       338
+   macro avg       0.60      0.60      0.59       338
+weighted avg       0.61      0.61      0.60       338
+
+SVM classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.58      0.80      0.67        71
+           2       0.95      0.83      0.89        70
+           3       0.29      0.42      0.34        66
+           4       0.05      0.02      0.02        66
+           5       0.34      0.32      0.33        65
+
+    accuracy                           0.49       338
+   macro avg       0.44      0.48      0.45       338
+weighted avg       0.45      0.49      0.46       338
+
+Ensemble classification report (K=5):
+              precision    recall  f1-score   support
+
+           1       0.53      0.96      0.68        71
+           2       0.83      0.90      0.86        70
+           3       0.37      0.38      0.38        66
+           4       0.38      0.18      0.24        66
+           5       0.24      0.12      0.16        65
+
+    accuracy                           0.52       338
+   macro avg       0.47      0.51      0.47       338
+weighted avg       0.47      0.52      0.47       338
+
+=== K-Fold Classification Report, K=6 ===
+KNN classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.45      0.66      0.54        71
+           2       0.87      0.87      0.87        70
+           3       0.30      0.41      0.34        66
+           4       0.19      0.11      0.14        66
+           5       0.11      0.06      0.08        65
+
+    accuracy                           0.43       338
+   macro avg       0.38      0.42      0.39       338
+weighted avg       0.39      0.43      0.40       338
+
+NaiveBayes classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.50      0.89      0.64        71
+           2       0.78      0.67      0.72        70
+           3       0.18      0.12      0.14        66
+           4       0.46      0.17      0.24        66
+           5       0.31      0.40      0.35        65
+
+    accuracy                           0.46       338
+   macro avg       0.45      0.45      0.42       338
+weighted avg       0.45      0.46      0.43       338
+
+DecisionTree classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.54      0.63      0.58        71
+           2       0.90      0.80      0.85        70
+           3       0.35      0.35      0.35        66
+           4       0.40      0.32      0.36        66
+           5       0.27      0.31      0.29        65
+
+    accuracy                           0.49       338
+   macro avg       0.49      0.48      0.48       338
+weighted avg       0.50      0.49      0.49       338
+
+RandomForest classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.69      0.79      0.74        71
+           2       0.86      0.90      0.88        70
+           3       0.23      0.23      0.23        66
+           4       0.38      0.27      0.32        66
+           5       0.16      0.17      0.16        65
+
+    accuracy                           0.48       338
+   macro avg       0.46      0.47      0.46       338
+weighted avg       0.47      0.48      0.47       338
+
+NeuralNetwork classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.80      0.86      0.83        71
+           2       0.92      0.94      0.93        70
+           3       0.42      0.38      0.40        66
+           4       0.60      0.52      0.55        66
+           5       0.30      0.34      0.32        65
+
+    accuracy                           0.62       338
+   macro avg       0.61      0.61      0.61       338
+weighted avg       0.61      0.62      0.61       338
+
+SVM classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.57      0.86      0.69        71
+           2       0.95      0.83      0.89        70
+           3       0.29      0.39      0.34        66
+           4       0.16      0.05      0.07        66
+           5       0.31      0.29      0.30        65
+
+    accuracy                           0.49       338
+   macro avg       0.46      0.48      0.46       338
+weighted avg       0.46      0.49      0.46       338
+
+Ensemble classification report (K=6):
+              precision    recall  f1-score   support
+
+           1       0.51      0.93      0.66        71
+           2       0.79      0.91      0.85        70
+           3       0.34      0.29      0.31        66
+           4       0.48      0.20      0.28        66
+           5       0.27      0.18      0.22        65
+
+    accuracy                           0.51       338
+   macro avg       0.48      0.50      0.46       338
+weighted avg       0.48      0.51      0.47       338
+
+=== K-Fold Classification Report, K=7 ===
+KNN classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.45      0.66      0.54        71
+           2       0.87      0.84      0.86        70
+           3       0.27      0.36      0.31        66
+           4       0.16      0.11      0.13        66
+           5       0.09      0.05      0.06        65
+
+    accuracy                           0.41       338
+   macro avg       0.37      0.40      0.38       338
+weighted avg       0.38      0.41      0.39       338
+
+NaiveBayes classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.49      0.89      0.63        71
+           2       0.78      0.66      0.71        70
+           3       0.18      0.14      0.16        66
+           4       0.47      0.12      0.19        66
+           5       0.28      0.37      0.32        65
+
+    accuracy                           0.44       338
+   macro avg       0.44      0.43      0.40       338
+weighted avg       0.45      0.44      0.41       338
+
+DecisionTree classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.59      0.61      0.60        71
+           2       0.90      0.86      0.88        70
+           3       0.34      0.32      0.33        66
+           4       0.45      0.27      0.34        66
+           5       0.26      0.38      0.31        65
+
+    accuracy                           0.49       338
+   macro avg       0.51      0.49      0.49       338
+weighted avg       0.51      0.49      0.50       338
+
+RandomForest classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.71      0.83      0.77        71
+           2       0.87      0.86      0.86        70
+           3       0.20      0.20      0.20        66
+           4       0.40      0.33      0.36        66
+           5       0.18      0.18      0.18        65
+
+    accuracy                           0.49       338
+   macro avg       0.47      0.48      0.47       338
+weighted avg       0.48      0.49      0.48       338
+
+NeuralNetwork classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.77      0.86      0.81        71
+           2       0.93      0.91      0.92        70
+           3       0.43      0.38      0.40        66
+           4       0.57      0.53      0.55        66
+           5       0.37      0.40      0.38        65
+
+    accuracy                           0.62       338
+   macro avg       0.61      0.62      0.61       338
+weighted avg       0.62      0.62      0.62       338
+
+SVM classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.58      0.83      0.68        71
+           2       0.94      0.83      0.88        70
+           3       0.27      0.33      0.30        66
+           4       0.06      0.02      0.02        66
+           5       0.28      0.32      0.30        65
+
+    accuracy                           0.48       338
+   macro avg       0.42      0.47      0.44       338
+weighted avg       0.43      0.48      0.45       338
+
+Ensemble classification report (K=7):
+              precision    recall  f1-score   support
+
+           1       0.50      0.90      0.64        71
+           2       0.77      0.89      0.82        70
+           3       0.30      0.24      0.27        66
+           4       0.28      0.12      0.17        66
+           5       0.28      0.20      0.23        65
+
+    accuracy                           0.48       338
+   macro avg       0.42      0.47      0.43       338
+weighted avg       0.43      0.48      0.44       338
+
+=== K-Fold Classification Report, K=8 ===
+KNN classification report (K=8):
+              precision    recall  f1-score   support
+
+           1       0.47      0.66      0.55        71
+           2       0.89      0.89      0.89        70
+           3       0.26      0.36      0.31        66
+           4       0.16      0.11      0.13        66
+           5       0.09      0.05      0.06        65
+
+    accuracy                           0.42       338
+   macro avg       0.37      0.41      0.39       338
+weighted avg       0.38      0.42      0.40       338
+
+NaiveBayes classification report (K=8):
+              precision    recall  f1-score   support
+
+           1       0.50      0.90      0.64        71
+           2       0.80      0.67      0.73        70
+           3       0.16      0.12      0.14        66
+           4       0.45      0.14      0.21        66
+           5       0.29      0.37      0.33        65
+
+    accuracy                           0.45       338
+   macro avg       0.44      0.44      0.41       338
+weighted avg       0.45      0.45      0.42       338
+
+DecisionTree classification report (K=8):
+              precision    recall  f1-score   support
+
+           1       0.57      0.65      0.61        71
+           2       0.89      0.79      0.83        70
+           3       0.32      0.36      0.34        66
+           4       0.35      0.26      0.30        66
+           5       0.25      0.28      0.26        65
+
+    accuracy                           0.47       338
+   macro avg       0.48      0.47      0.47       338
+weighted avg       0.48      0.47      0.47       338
+
