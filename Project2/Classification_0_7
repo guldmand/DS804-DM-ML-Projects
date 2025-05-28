@@ -1,0 +1,101 @@
+KNN:\n
+KNN (k=5) Accuracy: 0.2432\n
+              precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.18      0.22      0.20         9
+           2       0.38      0.50      0.43         6
+           3       0.33      0.17      0.22         6
+           4       0.00      0.00      0.00         3
+           5       0.20      0.25      0.22         4
+           6       0.17      0.33      0.22         3
+           7       0.00      0.00      0.00         4
+
+    accuracy                           0.24        37
+   macro avg       0.28      0.25      0.25        37
+weighted avg       0.25      0.24      0.23        37
+
+\nNaive Bayes:\n
+Naive Bayes Accuracy: 0.1892\n
+              precision    recall  f1-score   support
+
+           0       0.29      1.00      0.44         2
+           1       0.00      0.00      0.00         9
+           2       0.33      0.17      0.22         6
+           3       0.33      0.17      0.22         6
+           4       0.07      0.33      0.12         3
+           5       0.00      0.00      0.00         4
+           6       0.00      0.00      0.00         3
+           7       0.22      0.50      0.31         4
+
+    accuracy                           0.19        37
+   macro avg       0.16      0.27      0.16        37
+weighted avg       0.15      0.19      0.14        37
+
+\nDecision Tree:\n
+Decision Tree Accuracy: 0.1892\n
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         2
+           1       0.33      0.56      0.42         9
+           2       0.00      0.00      0.00         6
+           3       0.20      0.17      0.18         6
+           4       0.00      0.00      0.00         3
+           5       0.00      0.00      0.00         4
+           6       0.00      0.00      0.00         3
+           7       0.20      0.25      0.22         4
+
+    accuracy                           0.19        37
+   macro avg       0.09      0.12      0.10        37
+weighted avg       0.14      0.19      0.15        37
+
+\nNeural Network:\n
+Neural Network Accuracy: 0.1892\n
+              precision    recall  f1-score   support
+
+           0       0.50      0.50      0.50         2
+           1       0.20      0.33      0.25         9
+           2       0.20      0.17      0.18         6
+           3       0.40      0.33      0.36         6
+           4       0.00      0.00      0.00         3
+           5       0.00      0.00      0.00         4
+           6       0.00      0.00      0.00         3
+           7       0.00      0.00      0.00         4
+
+    accuracy                           0.19        37
+   macro avg       0.16      0.17      0.16        37
+weighted avg       0.17      0.19      0.18        37
+
+\nSVM:\n
+SVM (kernel=rbf) Accuracy: 0.2162\n
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         2
+           1       0.24      0.89      0.38         9
+           2       0.00      0.00      0.00         6
+           3       0.00      0.00      0.00         6
+           4       0.00      0.00      0.00         3
+           5       0.00      0.00      0.00         4
+           6       0.00      0.00      0.00         3
+           7       0.00      0.00      0.00         4
+
+    accuracy                           0.22        37
+   macro avg       0.03      0.11      0.05        37
+weighted avg       0.06      0.22      0.09        37
+
+\nEnsemble (Voting):\n
+Ensemble (Voting) Accuracy: 0.2432\n
+              precision    recall  f1-score   support
+
+           0       0.40      1.00      0.57         2
+           1       0.22      0.22      0.22         9
+           2       0.10      0.17      0.12         6
+           3       0.29      0.33      0.31         6
+           4       0.50      0.33      0.40         3
+           5       0.00      0.00      0.00         4
+           6       1.00      0.33      0.50         3
+           7       0.00      0.00      0.00         4
+
+    accuracy                           0.24        37
+   macro avg       0.31      0.30      0.27        37
+weighted avg       0.26      0.24      0.23        37
