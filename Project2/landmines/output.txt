@@ -1,4 +1,5 @@
 === Test size 10% / Train size 90% ===
+Test data saved to 'test_data.csv'
 KNN:
 KNN (k=5) Accuracy: 0.5294
               precision    recall  f1-score   support

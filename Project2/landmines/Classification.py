@@ -167,6 +167,17 @@ class Classification:
                     stratify=classifier_obj.data.y,
                 )
             )
+
+            # if split == 0.1 save the test data to a csv file
+            if split == 0.1:
+                X_train, X_test, y_train, y_test = classifier_obj.data.get_train_test(
+                    test_size=split, random_state=0
+                )
+                test_df = pd.DataFrame(X_test)
+                test_df["label"] = y_test
+                test_df.to_csv("test_data.csv", index=False)
+                print("Test data saved to 'test_data.csv'")
+
             for name, method in methods:
                 print(f"{name}:")
                 method()
@@ -592,6 +603,69 @@ if __name__ == "__main__":
 
     # Classification.visualisering_fra_accuracy("output.txt")
 
-    Classification.plot_data_from_csv(data_path)
+    # Classification.plot_data_from_csv(data_path)
 
-    Classification.plot_classified_data_from_nn(data_path)
+    # Classification.plot_classified_data_from_nn(data_path)
+
+    # genrate a confusion matrix for the best model
+    """
+    from sklearn.metrics import confusion_matrix
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
+    y_true = clf.data.y
+    y_pred = clf.NeuralNetwork(hidden_layer_sizes=(100, 50), max_iter=20000).predict(
+        clf.data.X_scaled
+    )
+    cm = confusion_matrix(y_true, y_pred)
+    plt.figure(figsize=(10, 7))
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Greens",
+        xticklabels=np.unique(y_true),
+        yticklabels=np.unique(y_true),
+    )
+    plt.xlabel("Predicted")
+    plt.ylabel("True")
+    plt.title("Confusion Matrix")
+    plt.show()
+    """
+    import pandas as pd
+    from sklearn.metrics import confusion_matrix
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    from sklearn.neural_network import MLPClassifier
+
+    # Indlæs testdata
+    test_df = pd.read_csv("test_data.csv")
+    X_test = test_df.drop(columns="label").values
+    y_test = test_df["label"].values
+
+    # Indlæs/fit scaler præcis som på træningsdata! Allerede gjort i din pipeline hvis du bruger clf.data.scaler
+
+    # Gen-træn modellen på træningsdata fra eksperimentet
+    # (Alternativt: Hvis du har gemt modellen, brug den samme, ellers re-trænes den)
+    X_train, _, y_train, _ = clf.data.get_train_test(test_size=0.1, random_state=0)
+    nn = MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=20000, random_state=0)
+    nn.fit(X_train, y_train)
+
+    # Forudsig på testdata
+    y_pred = nn.predict(X_test)
+
+    # Lav confusion matrix
+    cm = confusion_matrix(y_test, y_pred)
+    plt.figure(figsize=(10, 7))
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Greens",
+        xticklabels=np.unique(y_test),
+        yticklabels=np.unique(y_test),
+    )
+    plt.xlabel("Predicted")
+    plt.ylabel("True")
+    plt.title("Confusion Matrix (10% test data, Neural Network)")
+    plt.show()
