@@ -1,0 +1,51 @@
+
+
+Phrase Bank
+
+
+Text -> Vector -> Prediction
+
+
+TF-IDF
+
+
+
+Algorithms:
+
+K-NN							Distance based
+Logistic-regression
+Random Forest					Tree Based
+XGBoost
+
+
+
+Result
+
+- Accuracy
+- Prescision
+- Recall
+- F1 Score
+
+
+
+
+
+
+Parameter tuning
+
+
+KNN = 5, 3, 10
+Logistic regression C=1,0, max_iter=100
+Random forrest n_estimators, n=
+XGBoost: n=100, n=10, n=500
+
+
+
+MANUAL
+
+
+Data Split
+
+
+Parameter tuning based on trainning split,... Stratified... balanced data set,
+

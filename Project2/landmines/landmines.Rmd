@@ -12,11 +12,138 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Classification part2
 
 ```{r}
-#load the data from csv
+
+# load csv from current folder
+library(readr)
+landmines <- read_csv("data/land_mines.csv")
+
+head(landmines, 10)
+
+```
+
+```{r}
+# plot the landimes data where colum M, last column, is the classification label, and based on this value color the datapoint
+plot(landmines [, c(1,2,3)],
+     main="Landmines Data",)
+points(landmines[landmines$M == 1, c(1,2,3)], col="red", pch=19)
+```
+
+
+```{r}
+# Installér plotly hvis det ikke er installeret
+# install.packages("plotly")
+library(plotly)
+library(readr)
+library(dplyr)
+
+# Indlæs data
+df <- read_csv("land_mines.csv")
+
+# Konverter M til factor for at få diskrete farver
+df <- df %>%
+  mutate(M = factor(M))
+
+# Definér farver: M=0 grøn, resten forskellige
+farver <- c(
+  "1" = "green",
+  "2" = "red",
+  "3" = "tomato",
+  "4" = "indianred",
+  "5" = "darkred"
+)
+
+# 3D scatterplot med plotly
+plot_ly(df, x = ~H, y = ~V, z = ~S,
+        color = ~M,
+        colors = farver,
+        type = "scatter3d",
+        mode = "markers",
+        marker = list(size = 5)) %>%
+  layout(title = "3D Scatterplot: H, V, S colored after M",
+         scene = list(
+           xaxis = list(title = "Hight of sensor over ground"),
+           yaxis = list(title = "Voltage"),
+           zaxis = list(title = "Soil type")
+         ))
 
 ```
 
 
 
+```{r}
+# install.packages("nnet")
+library(nnet)
+library(caret)
+library(readr)
+
+# Indlæs data
+df <- read_csv("land_mines.csv")
+
+# Konverter M til faktor for klassifikation
+df$M <- as.factor(df$M)
+
+# Split data
+set.seed(0)
+train_index <- createDataPartition(df$M, p = 0.9, list = FALSE)
+train_data <- df[train_index, ]
+test_data <- df[-train_index, ]
+
+# Standardiser features
+preProc <- preProcess(train_data[, 1:3], method = c("center", "scale"))
+X_train <- predict(preProc, train_data[, 1:3])
+X_test <- predict(preProc, test_data[, 1:3])
+
+# Træn model – vi binder X_train sammen med faktoren M
+model <- nnet(M ~ ., data = cbind(X_train, M = train_data$M),
+              size = 10,
+              maxit = 20000,
+              trace = FALSE)  # Slår verbose log fra
+
+# Prædikér – returnerer sandsynligheder, så vi tager max-col
+# Prædikér – sandsynligheder
+pred_probs <- predict(model, X_test, type = "raw")
+
+# Map til labels ud fra max sandsynlighed
+true_levels <- levels(train_data$M)
+preds <- apply(pred_probs, 1, function(i) true_levels[which.max(i)])
+
+# Gør til faktor med korrekte levels
+preds <- factor(preds, levels = levels(test_data$M))
+
+# Evaluer
+confusionMatrix(preds, test_data$M)
 
 
+```
+
+
+```{r}
+# install.packages("plotly")
+library(plotly)
+
+# Kombinér testdata med prædiktioner
+plot_data <- cbind(X_test, 
+                   true_label = test_data$M,
+                   predicted_label = preds)
+
+# 3D scatterplot, farvet efter prædiktion
+plot_ly(plot_data,
+        x = ~H, y = ~V, z = ~S,
+        color = ~predicted_label,
+        colors = c(
+                    "1" = "green",
+                    "2" = "red",
+                    "3" = "tomato",
+                    "4" = "indianred",
+                    "5" = "darkred"
+                   ),
+        type = "scatter3d",
+        mode = "markers",
+        marker = list(size = 4)) %>%
+  layout(title = "3D Scatterplot: H, V, S colored after Classified M Label",
+         scene = list(
+           xaxis = list(title = "Hight of sensor over ground"),
+           yaxis = list(title = "Voltage"),
+           zaxis = list(title = "Soil type")
+         ))
+```

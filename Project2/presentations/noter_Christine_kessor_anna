@@ -1,0 +1,119 @@
+Breast cancer
+
+Christine, anna, kresor
+
+
+KNN
+----------
+
+using PCA1 (X) and PCA2 (Y), knn = 2, k=11
+
+Confusion matrix
+
+
+Evaluation of K nearest neigbour
+
+Score value
+Value of k
+
+
+Evaluating Accuracy score as a function of test size with k = 2
+Evaluating Accuracy score as a function of test size with k = 11
+
+
+Chosing KNN 2, and 11 (Grid search)
+
+Tranning or test score, should not tune using test, should tune using trainning
+
+ALWAYS tune parameters using training
+
+
+
+
+
+
+Gusian Naive bayes
+------------------------------
+
+
+
+Confussion matrix, different test size
+
+
+Test size vs. accuracy score
+
+
+
+Decision Tree
+------------------------------
+critirion = gini ... how many was missclassified
+cirtiron = entropy ... how many was missclassified
+confusion matrix
+
+test size vs 
+
+
+Ginni is best because it dont predict anyone with breast cancer as not having brest cancer
+
+
+
+
+
+
+
+SVM
+------------------------------
+
+Kernel: rbf
+C = 10
+
+Gamma = 1, gamma = 10
+
+changing C
+
+no gamma for linear kernel
+
+
+
+rbf kernel (high dimensional data)
+
+
+Features of dataset:
+Everything, but show it
+
+
+
+
+
+
+
+
+Comparing cernels
+
+Accuracy (y axis)
+C-Value (X)
+
+
+Methods:
+Linear kernel
+RBF kernel
+Ploy kjernel
+Sigmooid kernel
+
+
+
+
+
+
+DATA
+------------------------------------
+
+
+Scale (standard scaler)
+
+Normalization
+
+
+
+
+GAN (Creating synhtetic data)

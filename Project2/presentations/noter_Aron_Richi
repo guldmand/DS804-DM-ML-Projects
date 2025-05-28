@@ -1,0 +1,81 @@
+Classification Project
+
+Aron, Richi
+
+
+Car Evalutaion
+
+
+Prediction of Adult income
+
+
+-----------
+
+
+
+
+Decision Tree
+--------------------------------------------
+
+Random Forrest
+--------------------------------------------
+
+Support Vector 
+--------------------------------------------
+
+K-NN
+--------------------------------------------
+
+
+
+
+
+
+
+
+K-fold:
+
+Regular
+Sternpoint 
+
+GAN -> generate more data
+
+
+
+Important steps to avoid wrong conclusions:
+------------------------------------------------
+
+Feature engineering, 
+
+Data Cleaning
+
+Normalization
+
+
+Avoid imbalance data-sets
+
+
+
+
+with 14 features, after  Max_depth = 14, the 
+
+
+instead of dropping features:
+
+- average
+- medium
+- regression thing, to find missing values, before using models
+
+
+
+
+
+
+
+What Distance messuares used
+
+
+
+
+
+

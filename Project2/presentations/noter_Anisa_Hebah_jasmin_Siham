@@ -1,0 +1,40 @@
+Project 2 - Classification
+
+
+Breast cancer dataset 
+heart disease dataset
+
+Anisa, Hebah, jasmin, Siham
+
+
+
+
+
+
+
+K-Nearest Neighbors
+- Needs scaling, no
+ dominant features
+
+
+Decision tree
+- Yes no questions
+
+
+Naive bay
+- Assumes feature independence
+
+
+Random Forests
+
+- Finds important features
+- Handles 
+
+
+
+
+Accuracy
+
+80/20 test-train split with stratification to keep data balanced
+
+
