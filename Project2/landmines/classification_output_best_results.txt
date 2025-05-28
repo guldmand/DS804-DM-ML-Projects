@@ -1,0 +1,76 @@
+=== Test size 10% / Train size 90% ===
+NeuralNetwork:
+Neural Network Accuracy: 0.7353
+              precision    recall  f1-score   support
+
+           1       0.64      1.00      0.78         7
+           2       0.88      1.00      0.93         7
+           3       0.62      0.71      0.67         7
+           4       1.00      0.57      0.73         7
+           5       0.67      0.33      0.44         6
+
+    accuracy                           0.74        34
+   macro avg       0.76      0.72      0.71        34
+weighted avg       0.76      0.74      0.72        34
+
+
+=== Test size 15% / Train size 85% ===
+DecisionTree:
+Decision Tree Accuracy: 0.5882
+              precision    recall  f1-score   support
+
+           1       0.57      0.73      0.64        11
+           2       0.91      1.00      0.95        10
+           3       0.50      0.40      0.44        10
+           4       1.00      0.20      0.33        10
+           5       0.38      0.60      0.46        10
+
+    accuracy                           0.59        51
+   macro avg       0.67      0.59      0.57        51
+weighted avg       0.67      0.59      0.57        51
+
+=== Test size 15% / Train size 85% ===
+RandomForest:
+Random Forest Accuracy: 0.5294
+              precision    recall  f1-score   support
+
+           1       0.65      1.00      0.79        11
+           2       0.91      1.00      0.95        10
+           3       0.27      0.30      0.29        10
+           4       0.40      0.20      0.27        10
+           5       0.14      0.10      0.12        10
+
+    accuracy                           0.53        51
+   macro avg       0.47      0.52      0.48        51
+weighted avg       0.48      0.53      0.49        51
+
+
+=== Test size 20% / Train size 80% ===
+NaiveBayes:
+Naive Bayes Accuracy: 0.5000
+              precision    recall  f1-score   support
+
+           1       0.45      0.93      0.61        15
+           2       0.85      0.79      0.81        14
+           3       0.40      0.46      0.43        13
+           4       0.50      0.08      0.13        13
+           5       0.29      0.15      0.20        13
+
+    accuracy                           0.50        68
+   macro avg       0.50      0.48      0.44        68
+weighted avg       0.50      0.50      0.45        68
+
+
+=== Test size 35% / Train size 65% ===
+Ensemble (Voting) Accuracy: 0.5462
+              precision    recall  f1-score   support
+
+           1       0.47      0.88      0.61        25
+           2       0.81      0.88      0.85        25
+           3       0.41      0.39      0.40        23
+           4       0.67      0.26      0.38        23
+           5       0.43      0.26      0.32        23
+
+    accuracy                           0.55       119
+   macro avg       0.56      0.53      0.51       119
+weighted avg       0.56      0.55      0.52       119
